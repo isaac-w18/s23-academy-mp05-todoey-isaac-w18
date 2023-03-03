@@ -15,6 +15,7 @@
 		6A5D4FBB29AEE2E700B1DD1C /* ToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5D4FBA29AEE2E700B1DD1C /* ToDoView.swift */; };
 		6A5D4FBD29AEE42B00B1DD1C /* ToDoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5D4FBC29AEE42B00B1DD1C /* ToDoList.swift */; };
 		6A5D4FBF29AFB8E100B1DD1C /* ToDoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5D4FBE29AFB8E100B1DD1C /* ToDoListView.swift */; };
+		6A5D4FC329B2531D00B1DD1C /* ToDoItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5D4FC229B2531D00B1DD1C /* ToDoItemRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		6A5D4FBA29AEE2E700B1DD1C /* ToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoView.swift; sourceTree = "<group>"; };
 		6A5D4FBC29AEE42B00B1DD1C /* ToDoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoList.swift; sourceTree = "<group>"; };
 		6A5D4FBE29AFB8E100B1DD1C /* ToDoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListView.swift; sourceTree = "<group>"; };
+		6A5D4FC229B2531D00B1DD1C /* ToDoItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			children = (
 				6A5D4FAA29AEE27400B1DD1C /* ToDoeyApp.swift */,
 				6A5D4FAC29AEE27400B1DD1C /* ContentView.swift */,
+				6A5D4FC229B2531D00B1DD1C /* ToDoItemRowView.swift */,
 				6A5D4FBC29AEE42B00B1DD1C /* ToDoList.swift */,
 				6A5D4FBE29AFB8E100B1DD1C /* ToDoListView.swift */,
 				6A5D4FB829AEE2CF00B1DD1C /* ToDoItem.swift */,
@@ -155,6 +158,7 @@
 				6A5D4FBD29AEE42B00B1DD1C /* ToDoList.swift in Sources */,
 				6A5D4FBB29AEE2E700B1DD1C /* ToDoView.swift in Sources */,
 				6A5D4FB929AEE2CF00B1DD1C /* ToDoItem.swift in Sources */,
+				6A5D4FC329B2531D00B1DD1C /* ToDoItemRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

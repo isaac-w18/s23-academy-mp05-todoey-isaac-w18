@@ -11,9 +11,9 @@ struct ToDoList {
     var color: Color
     var name: String
     @State var todos: [ToDoItem]
-    var num: Int
-//    var num = {
-//        todos.count
-//    }
+    
+    func getCount() -> Int {
+        return todos.count
+    }
 }
 

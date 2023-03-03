@@ -10,7 +10,6 @@ import SwiftUI
 struct ToDoListView: View {
     @State var toDoList: ToDoList
     
-    
     var body: some View {
         NavigationStack {
             List {
@@ -20,26 +19,52 @@ struct ToDoListView: View {
                     }
                 }
             }
-            .navigationBarTitleDisplayMode(.large)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     HStack {
                         Text(toDoList.name)
                             .foregroundColor(toDoList.color)
-                        Spacer()
-                        Text("\(toDoList.num)")
+                            .font(.largeTitle)
+                            .bold()
+
+
+                        Text("("+"\(toDoList.getCount())"+")")
                             .foregroundColor(toDoList.color)
+                            .font(.largeTitle)
+                            .bold()
                     }
-                    
+
                 }
             }
+            newReminder(todos: $toDoList.todos)
+            
         }
         
     }
 }
 
+struct newReminder: View {
+    @Binding var todos: [ToDoItem]
+    
+    var body: some View {
+        HStack {
+            Button {
+                print(todos.count)
+                todos.append(ToDoItem(content: "Hello", isDone: false))
+                print(todos.count)
+            } label: {
+                Image(systemName: "plus.circle.fill")
+                Text("New Reminder")
+            }
+            Spacer()
+        }
+        .padding()
+    }
+}
+
+
 struct ToDoListView_Previews: PreviewProvider {
     static var previews: some View {
-        ToDoListView(toDoList: ToDoList(color: .green, name: "App Team", todos: [ToDoItem(content: "Talk to Frank", isDone: true), ToDoItem(content: "App Team Work", isDone: false)], num: 2))
+        ToDoListView(toDoList: ToDoList(color: .green, name: "App Team", todos: [ToDoItem(content: "Talk to Frank", isDone: true), ToDoItem(content: "App Team Work", isDone: false)]))
     }
 }
